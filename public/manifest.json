@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "author": "Kafil Uddin Kiron",
+  "name": "Calculate",
+  "description": "Quick & efficient way to use calculator on your browser",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "icon-128.png",
+    "default_title": "Calculate",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "64": "assets/icons/icon-64.png",
+    "128": "assets/icons/icon-128.png"
+  },
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4Gsmm2fRGk3mZjpYFasueSn+1WXanVlqg1JwzGD0BQ2mCiCgXohLBqBSJNPLYWnwgktoVJuEcuxJwAZv6CJtDgUiYoMMMrAP5c3klylDxpbdA2Wkmi266IMkDj3+OR3GLtyZkN9MdN5xWmCvlrZGH1VSQE/IReWtdhDx/SDX+tS1tTph87kXHByusuYeB26B/MVHmiWK71xZdEE0qFl1kW7vBRgvgPRaPgmjizDwWr2YfIIIqIfueuDzmihIocfM5aOhA/DQnu0HQ+QHU2DbDDsa/cnj0vYwDmIUtgKNp8qrMYAHzvlSoTI8icvuP7n5hYISfLBg9S49qdwIiD03AQIDAQAB",
+
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "<all_urls>"
+  ]
+}
